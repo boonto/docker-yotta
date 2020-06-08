@@ -5,7 +5,7 @@ RUN apt update && apt upgrade -y
 RUN DEBIAN_FRONTEND="noninteractive" apt install -y tzdata curl wget
 
 # Compiler dependencies
-RUN apt install -y python-setuptools cmake build-essential ninja-build python-dev libffi-dev libssl-dev
+RUN apt install -y python-setuptools cmake build-essential ninja-build python-dev libffi-dev libssl-dev srecord
 
 # Pip & Yotta
 WORKDIR /tmp
